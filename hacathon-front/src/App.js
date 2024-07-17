@@ -1,11 +1,14 @@
 import "./App.css";
 import Navi from "./navi";
+import { Route, Routes } from "react-router-dom";
+import Baljin from "./baljin";
 
 function App() {
   return (
-    <div className="App">
-      <Navi />
-    </div>
+    <Routes>
+      <Route path="/" element={<Navi />} />
+      <Route path="/balgin" element={<Baljin />} />
+    </Routes>
   );
 }
 
